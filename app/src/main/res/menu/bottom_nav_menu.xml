@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miSymptoms"
+        android:icon="@drawable/ic_symptoms_foreground"
+        android:title="Symptoms"
+        />
+
+    <item
+        android:title="Prevention"
+        android:icon="@drawable/ic_prevention_foreground"
+        android:id="@+id/miPrevention"
+        />
+
+    <item
+        android:title="Articles"
+        android:icon="@drawable/ic_articles_foreground"
+        android:id="@+id/miArticles"
+        />
+
+</menu>
