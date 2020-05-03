@@ -19,18 +19,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val symptomsFragment = SymptomsFragment()
-        val preventionFragment = PreventionFragment()
+        val homeFragment = HomeFragment()
         val articlesFragment = ArticlesFragment()
+        showCurrentFragment(homeFragment)
 
         bottom_nav.setOnNavigationItemSelectedListener {menuItem ->
             when(menuItem.itemId){
                 R.id.miSymptoms -> showCurrentFragment(symptomsFragment)
-                R.id.miPrevention -> showCurrentFragment(preventionFragment)
+                R.id.miHome -> showCurrentFragment(homeFragment)
                 R.id.miArticles -> showCurrentFragment(articlesFragment)
             }
             true
         }
-
     }
 
     private fun showCurrentFragment(fragment: Fragment){

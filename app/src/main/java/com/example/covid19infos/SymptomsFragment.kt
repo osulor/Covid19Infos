@@ -2,9 +2,7 @@ package com.example.covid19infos
 
 import android.os.Bundle
 import android.text.SpannableStringBuilder
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_symptoms.*
 
@@ -24,6 +22,15 @@ class SymptomsFragment: Fragment(R.layout.fragment_symptoms) {
         }
 
         symptomsList.text = spannableString
+
+        preventionBtn.setOnClickListener {
+            val preventionFragment = PreventionFragment()
+            activity!!.supportFragmentManager.beginTransaction()
+                .replace(R.id.flFragment,preventionFragment)
+                .addToBackStack(preventionFragment.tag)
+                .commit()
+
+        }
     }
 
 }

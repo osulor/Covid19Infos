@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -12,6 +11,7 @@
         android:text="Articles"
         android:textAllCaps="true"
         android:textSize="32sp"
+        android:textColor="#ff7f50"
         android:layout_margin="24dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
