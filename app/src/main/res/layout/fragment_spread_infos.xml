@@ -4,34 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.PreventionFragment">
+    tools:context=".ui.SpreadInfosFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/preventionTitle"
+        android:id="@+id/spreadText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How to prevent Covid-19"
-        android:textAllCaps="true"
-        android:textSize="32sp"
-        android:textAlignment="center"
-        android:layout_margin="24dp"
-        android:textStyle="bold"
+        android:text="How it spreads"
         android:textColor="#ff7f50"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:layout_margin="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
-        android:id="@+id/preventionList"
-        android:layout_width="wrap_content"
+        android:id="@+id/spreadTv"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textAllCaps="true"
+        android:text="@string/how_it_spreads_paragraph"
+        android:textAlignment="textStart"
+        android:layout_margin="8dp"
         android:textSize="18sp"
-        android:layout_margin="24dp"
-        android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/preventionTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spreadText"
         />
 
 

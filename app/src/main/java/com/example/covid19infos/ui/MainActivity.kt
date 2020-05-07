@@ -1,16 +1,10 @@
-package com.example.covid19infos
+package com.example.covid19infos.ui
 
-import android.content.res.Resources
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.SpannableStringBuilder
-import android.text.Spanned
-import android.text.style.BulletSpan
 import androidx.fragment.app.Fragment
+import com.example.covid19infos.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_symptoms.*
 
 class MainActivity : AppCompatActivity() {
 

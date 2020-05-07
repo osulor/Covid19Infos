@@ -1,11 +1,10 @@
-package com.example.covid19infos
+package com.example.covid19infos.ui
 
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import com.example.covid19infos.R
 import kotlinx.android.synthetic.main.fragment_prevention.*
 
 /**
