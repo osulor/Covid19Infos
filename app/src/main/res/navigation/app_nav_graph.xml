@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.covid19infos.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_spreadInfosFragment"
+            app:destination="@id/spreadInfosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spreadInfosFragment"
+        android:name="com.example.covid19infos.ui.SpreadInfosFragment"
+        android:label="fragment_spread_infos"
+        tools:layout="@layout/fragment_spread_infos" />
+    <fragment
+        android:id="@+id/preventionFragment"
+        android:name="com.example.covid19infos.ui.PreventionFragment"
+        android:label="fragment_prevention"
+        tools:layout="@layout/fragment_prevention" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.example.covid19infos.ui.SymptomsFragment"
+        android:label="SymptomsFragment" >
+        <action
+            android:id="@+id/action_symptomsFragment_to_preventionFragment"
+            app:destination="@id/preventionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.covid19infos.ui.NewsFragment"
+        android:label="NewsFragment" >
+        <action
+            android:id="@+id/action_newsFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.covid19infos.ui.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <argument
+            android:name="article"
+            app:argType="com.example.covid19infos.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.covid19infos.ui.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+</navigation>

@@ -9,9 +9,12 @@ import retrofit2.http.Query
 interface NewApiService {
 
     @GET("v2/everything")
-    fun getNews(
-        @Query("q") searchQuery : String = "coronavirus",
-        @Query("page") page : Int = 1,
-        @Query("apiKey") apiKey: String = API_KEY
+    suspend fun getNews(
+        @Query("q")
+        searchQuery : String = "coronavirus",
+        @Query("page")
+        page : Int = 1,
+        @Query("apiKey")
+        apiKey: String = API_KEY
     ) : Response<News>
 }

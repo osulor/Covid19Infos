@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.text.SpannableStringBuilder
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.covid19infos.R
+import com.example.covid19infos.adapter.PreventionAdapter
 import kotlinx.android.synthetic.main.fragment_prevention.*
 
 /**
@@ -12,19 +14,15 @@ import kotlinx.android.synthetic.main.fragment_prevention.*
  */
 class PreventionFragment : Fragment(R.layout.fragment_prevention) {
 
-    lateinit var spannableString : SpannableStringBuilder
-
-    val symptomsArray = listOf("prevention1","prevention2","prevention3","prevention4")
+    val preventionArray = listOf(R.drawable.ic_home_prevention,R.drawable.ic_touching_prevention ,R.drawable.ic_wash_prevention,
+        R.drawable.ic_cough_prevention,R.drawable.ic_disinfect_prevention,R.drawable.ic_contact_prevention)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        spannableString = SpannableStringBuilder("")
+        preventionRV.adapter = PreventionAdapter(preventionArray)
+        preventionRV.layoutManager = GridLayoutManager(this.requireContext(),2)
 
-        for (string in symptomsArray){
-            spannableString.append("- " + string.plus("\n \n"))
-        }
-
-        preventionList.text = spannableString
     }
+
 }

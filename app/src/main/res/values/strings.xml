@@ -10,7 +10,7 @@
     </string>
 
     <string name="how_it_spreads_paragraph">
-
+    \n
     It is thought to spread mainly from person to person, mainly through respiratory droplets
     produced when an infected person coughs or sneezes. These <b>droplets</b> can land in the mouths or
     noses of people who are nearby or possibly be inhaled into the lungs. \n \nSpread is more likely
@@ -21,7 +21,7 @@
 
     The virus that causes COVID-19 is spreading very easily and sustainably between people.
     Information from the ongoing COVID-19 pandemic suggests that this virus is spreading more
-    efficiently than influenza, but not as efficiently as measles, which is highly contagious.
+    efficiently than influenza, but not as efficiently as measles, which is highly contagious. \n \n
 
     </string>
 

@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
     tools:context=".ui.SpreadInfosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/spreadText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="14dp"
         android:text="How it spreads"
-        android:textColor="#ff7f50"
         android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="30sp"
         android:textAllCaps="true"
-        android:layout_margin="24dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ff7f50"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
         />
 
-    <TextView
-        android:id="@+id/spreadTv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/how_it_spreads_paragraph"
-        android:textAlignment="textStart"
-        android:layout_margin="8dp"
-        android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spreadText"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spreadText"
+        android:layout_marginBottom="65dp"
+        >
 
+        <TextView
+            android:id="@+id/spreadTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_it_spreads_paragraph"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>
