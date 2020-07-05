@@ -1,12 +1,15 @@
-package com.example.covid19infos.remote
+package com.example.covid19infos.remote.retrofit
 
+import com.example.covid19infos.remote.service.NewsApiService
+import com.example.covid19infos.remote.service.TrackerApiService
 import com.example.covid19infos.util.Constants.BASE_URL
+import com.example.covid19infos.util.Constants.TRACKER_BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
+class TrackerRetrofitInstance {
 
     companion object{
         private val retrofitInstance by lazy {
@@ -18,16 +21,17 @@ class RetrofitInstance {
                 .build()
 
             Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(TRACKER_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build()
 
         }
 
-        val api by lazy {
-            retrofitInstance.create(NewApiService::class.java)
+        val API_TRACKER: TrackerApiService by lazy {
+            retrofitInstance.create(TrackerApiService::class.java)
         }
+
     }
 
 }

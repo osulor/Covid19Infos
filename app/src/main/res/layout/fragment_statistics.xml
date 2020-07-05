@@ -133,7 +133,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/recovedNumber"
+                    android:id="@+id/recoveredNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
@@ -152,7 +152,7 @@
                     tools:text="400K" />
 
                 <TextView
-                    android:id="@+id/minutes_text"
+                    android:id="@+id/recovered_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Recovered"
@@ -166,7 +166,7 @@
                     android:gravity="center_horizontal"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/recovedNumber"
+                    app:layout_constraintTop_toBottomOf="@id/recoveredNumber"
 
                     />
             </androidx.constraintlayout.widget.ConstraintLayout>

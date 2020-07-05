@@ -1,12 +1,12 @@
-package com.example.covid19infos.remote
+package com.example.covid19infos.remote.service
 
-import com.example.covid19infos.model.News
+import com.example.covid19infos.model.news.News
 import com.example.covid19infos.util.Constants.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface NewApiService {
+interface NewsApiService {
 
     @GET("v2/everything")
     suspend fun getNews(

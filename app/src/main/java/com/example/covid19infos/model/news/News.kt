@@ -1,4 +1,4 @@
-package com.example.covid19infos.model
+package com.example.covid19infos.model.news
 
 import com.example.covid19infos.model.Article
 

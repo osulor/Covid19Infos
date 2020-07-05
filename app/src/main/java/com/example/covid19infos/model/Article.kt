@@ -1,5 +1,6 @@
 package com.example.covid19infos.model
 
+import com.example.covid19infos.model.news.Source
 import java.io.Serializable
 
 data class Article(
@@ -12,3 +13,4 @@ data class Article(
     val url: String,
     val urlToImage: String
 ) : Serializable
+

@@ -5,8 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covid19infos.R
-import com.example.covid19infos.model.Symptoms
-import kotlinx.android.synthetic.main.prevention_item.view.*
+import com.example.covid19infos.model.news.Symptoms
 import kotlinx.android.synthetic.main.symptoms_item.view.*
 
 class SymptomsAdapter(val symptomsList : List<Symptoms>) : RecyclerView.Adapter<SymptomsAdapter.SymptomsViewHolder>() {

@@ -1,9 +1,9 @@
-package com.example.covid19infos.viewmodel
+package com.example.covid19infos.viewmodel.news
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.covid19infos.model.News
+import com.example.covid19infos.model.news.News
 import com.example.covid19infos.repository.NewsRepository
 import com.example.covid19infos.util.ApiCallState
 import kotlinx.coroutines.launch

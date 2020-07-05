@@ -17,11 +17,9 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
         override fun areItemsTheSame(oldItem: Article, newItem: Article): Boolean {
             return oldItem.url == newItem.url
         }
-
         override fun areContentsTheSame(oldItem: Article, newItem: Article): Boolean {
             return oldItem == newItem
         }
-
     }
 
     val differ = AsyncListDiffer(this,differCallback)
@@ -55,6 +53,4 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
     }
 
     inner class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
-
 }

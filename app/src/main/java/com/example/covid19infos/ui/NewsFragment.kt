@@ -6,13 +6,11 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.covid19infos.R
 import com.example.covid19infos.adapter.NewsAdapter
-import com.example.covid19infos.model.Article
 import com.example.covid19infos.util.ApiCallState
-import com.example.covid19infos.viewmodel.NewsViewModel
+import com.example.covid19infos.viewmodel.news.NewsViewModel
 import kotlinx.android.synthetic.main.fragment_articles.*
 
 class NewsFragment: Fragment(R.layout.fragment_articles) {
