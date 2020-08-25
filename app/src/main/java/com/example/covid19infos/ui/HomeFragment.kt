@@ -17,7 +17,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
 
         spreadBtn.setOnClickListener {
-            //((activity) as MainActivity).switchToSpreadFragment()
             findNavController().navigate(R.id.action_homeFragment_to_spreadInfosFragment)
         }
     }
